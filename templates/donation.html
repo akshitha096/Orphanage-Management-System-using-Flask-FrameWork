@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DONATION FORM</title>
+   </head>
+   <body>
+  <style type="text/css">
+    body{
+    background-color:rgb(163, 183, 182);
+    margin:10px;
+    padding:5px;
+    border:1px solid black;
+    }
+    table{
+
+    }
+    th{
+    padding-right:150px;
+    padding-left:100px;
+    }
+    button{
+    border-radius: 10px;
+    }
+    #butt{
+    padding-left:300px;
+    padding-right:20px
+    }
+    #logo{
+    width:50px;
+    height:50px;
+    padding-right:50px;
+    }
+    </style>
+    <form method="post" action="//submit.form" onSubmit="return validateForm();">
+        <div style="max-width: 400px;">
+        </div>
+        <center>
+            <div style="padding-bottom: 18px;font-size : 24px;">DONATION FORM</div>
+        <div style="display: flex; padding-bottom: 50px;max-width : 550px;">
+            <div class="column">
+        <div style=" margin-left: 101%; margin-right: 5%; width: 49%;padding-bottom: 20px">First name<br/>
+        <input type="text" id="data_2" name="data_2" style="max-width: 100% ;" class="form-control"/>
+        </div>
+        <div style=" margin-left: 100%; margin-right: 5%; width: 49%;">Last name<br/>
+        <input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control"/>
+        </div>
+            </div>
+        </div><div style="padding-top: -16px;padding-bottom: 16px;">Email<br/>
+        <input type="text" id="data_4" name="data_4" style="max-width : 550px;" class="form-control"/>
+        </div>
+        <div style="padding-bottom: 18px;">Donation Amount<span style="color: red;"> *</span><br/>
+        <span><input type="radio" id="data_5_0" name="data_5" value="$50"/> $50</span><br/>
+        <span><input type="radio" id="data_5_1" name="data_5" value="$100"/> $100</span><br/>
+        <span><input type="radio" id="data_5_2" name="data_5" value="$250"/> $250</span><br/>
+        <span><input type="radio" id="data_5_3" name="data_5" value="$500"/> $500</span><br/>
+        </div>
+        <a href="http://127.0.0.1:5000/dashboard">SUBMIT</a>
+        </form>
+   </center>
+   </body>
